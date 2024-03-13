@@ -1,10 +1,12 @@
-import Card from "./components/MemoryCards/Card/Card"
+import fetchData from "../src/utils/API";
 
 function App() {  
 
+  const img = fetchData();
+  console.log(img)
   return (
     <>
-      <Card></Card>
+      <div></div>
     </>
   )
 }

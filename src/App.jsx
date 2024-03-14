@@ -7,6 +7,7 @@ import FunFacts from "./components/FunFacts/FunFacts";
 import Contact from "./components/Contact/Contact";
 
 
+
 function App() {
 
   return (
@@ -26,3 +27,4 @@ function App() {
 }
 
 export default App;
+

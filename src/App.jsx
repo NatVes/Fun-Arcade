@@ -1,31 +1,29 @@
-// App.jsx
-import React, { useEffect } from 'react';
-import Header from './components/Header';
-import Body from './components/Body';
-import fetchData from '../src/utils/API';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProSidebar from "./components/ProSidebar/ProSidebar";
+import Games from "./components/Games/Games";
+import MemoryCard from "./components/MemoryCards/MemoryCard/MemoryCard.jsx";
+import Score from "./components/Scores/Score";
+import FunFacts from "./components/FunFacts/FunFacts";
+import Contact from "./components/Contact/Contact";
 
-const App = () => {
-  useEffect(() => {
-    const fetchDataAsync = async () => {
-      try {
-        const imgData = await fetchData();
-        console.log(imgData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
 
-    fetchDataAsync();
-  }, []);
+function App() {
 
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Body />
-      </main>
-    </div>
+    <Router>
+      <ProSidebar />
+      <Routes>
+        {/* Define routes using the Route component to render different page components at different paths */}
+        {/* Define a default route that will render the Home component */}
+        <Route path="/" element={<Games />} />
+        <Route path="/:id" element={<MemoryCard />} />
+        <Route path="/scores" element={<Score />} />
+        <Route path="/funfacts" element={<FunFacts />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
+

@@ -1,0 +1,33 @@
+/* TicTacToe.css */
+
+
+.tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  
+  .tic-tac-toe-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+  .x-symbol {
+    color: #ff6347; /* coral */
+  }
+
+  .o-symbol {
+    color: #4682b4; /* steelblue */
+  }
+  

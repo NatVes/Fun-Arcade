@@ -1,6 +1,6 @@
 /* TicTacToe.css */
 
-/* Styles for the game board */
+
 .tic-tac-toe-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,7 +11,7 @@
     margin: 0 auto;
   }
   
-  /* Styles for individual cells */
+  
   .tic-tac-toe-cell {
     display: flex;
     align-items: center;
@@ -22,12 +22,11 @@
     cursor: pointer;
   }
   
-  /* Styles for X symbol */
+
   .x-symbol {
     color: #ff6347; /* coral */
   }
-  
-  /* Styles for O symbol */
+
   .o-symbol {
     color: #4682b4; /* steelblue */
   }

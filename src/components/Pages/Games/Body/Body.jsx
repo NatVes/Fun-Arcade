@@ -1,6 +1,6 @@
 // Body.jsx
 import React from 'react';
-import GameContainer from './GameContainer'; // Import the GameContainer component
+import GameContainer from '../GameContainer/GameContainer'; // Import the GameContainer component
 import './Body.css'; // Import the styles for Body
 
 const Body = () => {

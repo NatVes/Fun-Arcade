@@ -1,9 +1,0 @@
-/* Body.css */
-.game-containers {
-  display: flex;
-  justify-content: center; /* Align horizontally in the center */
-  margin: 20px;
-  padding-top: 150px;
-}
-
-/* Add any additional styling as needed */

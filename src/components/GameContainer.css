@@ -1,0 +1,48 @@
+/* GameContainer.css */
+.game-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Stack the child elements vertically */
+  align-items: center;
+}
+
+.game-container:hover {
+  transform: scale(1.05);
+}
+
+.game-container img {
+  max-width: 150%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.game-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.game-container p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.game-container a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.game-container a:hover {
+  background-color: #2980b9;
+}

@@ -1,14 +1,31 @@
-import fetchData from "../src/utils/API";
+// App.jsx
+import React, { useEffect } from 'react';
+import Header from './components/Header';
+import Body from './components/Body';
+import fetchData from '../src/utils/API';
 
-function App() {  
+const App = () => {
+  useEffect(() => {
+    const fetchDataAsync = async () => {
+      try {
+        const imgData = await fetchData();
+        console.log(imgData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
 
-  const img = fetchData();
-  console.log(img)
+    fetchDataAsync();
+  }, []);
+
   return (
-    <>
-      <div></div>
-    </>
-  )
-}
+    <div className="App">
+      <Header />
+      <main>
+        <Body />
+      </main>
+    </div>
+  );
+};
 
-export default App
+export default App;

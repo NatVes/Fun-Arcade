@@ -1,0 +1,18 @@
+/* Header.css */
+.header {
+    background-color: #20115500; /* Choose your desired background color */
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .header img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for the transform property */
+  }
+  
+  .header img:hover {
+    transform: scale(1.1); /* Applying a scaling effect on hover */
+  }

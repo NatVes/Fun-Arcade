@@ -1,0 +1,5 @@
+body {
+    background-image: url('/public/images/pink-neon-background.png'); 
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-size: cover; /* Makes the image cover the full screen */
+  }

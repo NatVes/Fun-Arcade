@@ -7,7 +7,7 @@ const useFetchData = () => {
     useEffect(() => {
         const randomPage = Math.round(Math.random() * (14 - 1) + 1);
         const API_KEY = import.meta.env.VITE_API_KEY;
-        const BASE_URL = `https://api.pexels.com/v1/search?query=funny&orientation=square&size=small&page=${randomPage}&per_page=6`;
+        const BASE_URL = `https://api.pexels.com/v1/search?query=funny&orientation=square&size=small,medium&page=${randomPage}&per_page=6`;
 
         fetch(BASE_URL, {
             headers: {

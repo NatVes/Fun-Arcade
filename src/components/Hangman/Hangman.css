@@ -1,0 +1,49 @@
+h1, .intro {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 0;
+    margin-bottom: 0;
+
+}
+
+.intro {
+    font-size: 1.2rem;
+    margin-top: 1%;
+}
+
+.hangman-figure-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.frame {
+    stroke: black;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+
+.figure {
+    /* display: none; */
+    stroke: black;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+
+.word-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-weight: bold;
+}
+
+
+

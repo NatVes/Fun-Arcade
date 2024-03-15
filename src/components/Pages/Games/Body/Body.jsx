@@ -6,10 +6,9 @@ import gamesData from "../../../../games.json";
 
 const Body = () => {
   return (
-    <section className="game-containers">
+    <section className="game-containers row justify-content-center gap-4 my-5 mx-0">
       {gamesData.map((game) => (
         <GameContainer
-          id = {game.id}
           key = {game.id}
           title = {game.title}
           image = {game.image}

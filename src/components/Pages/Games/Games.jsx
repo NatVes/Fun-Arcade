@@ -5,9 +5,12 @@ import Body from './Body/Body';
 
 export default function Games() {
   return (
-    <div>
+    <>
       <Header />
-      <Body />
-    </div>
+      <div className='container'>
+        <Body />
+      </div>
+      
+    </>
   );
 }

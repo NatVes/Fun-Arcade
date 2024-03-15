@@ -18,7 +18,7 @@ function MCardLogic() {
         setFirstChoice(null);
         setSecondChoice(null)
         setCards(mixedCards);
-        setScore(0);
+        setScore(0);//use function to save to Local Storage here?
         reset();
     }
 
@@ -57,21 +57,42 @@ function MCardLogic() {
         mixCards()
     }, [])
 
+    useEffect(() => {
+        localStorage.setItem("MCardScore", JSON.stringify(score))
+    }, [score]);
+
     return (
-        <div>
-            <div className="container my-5">
-                <div className="row row-cols-1 row-cols-md-2 g-4">
-                    {cards && cards.map((card) => (
-                    <MemoryCard key={card.uniqueId} card={card} handleChoice={handleChoice} flipped={card === firstChoice || card === secondChoice || card.matched} disabled={disabled} />
-                    ))}
+        <div className="container my-5">
+            <div className="row justify-content-center">
+                <div className="col">
+                    <div className="row row-gap-4 justify-content-center">
+                        {cards && cards.map((card) => (
+                        <MemoryCard key={card.uniqueId} card={card} handleChoice={handleChoice} flipped={card === firstChoice || card === secondChoice || card.matched} disabled={disabled} />
+                        ))}
+                    </div>
                 </div>
             </div>
-            <p className="score">Score: {score}</p>
+            <p className="score my-3">Score: {score}</p>
             <button className="btn" onClick={mixCards}>Start</button>
-            
         </div>
     )
 }
 
 export default MCardLogic;
 
+
+// function LocalStorage() {
+//     const scoreTable = [];
+
+//     function checkAdd() {    
+//         let storedData = JSON.parse(localStorage.getItem("scoreTable"));    
+//         if (storedData !== null) {
+//             scoreTable = storedData;
+//         }
+//     }
+
+//     function storeUserData() {
+//         localStorage.setItem("scoreTable", JSON.stringify(scoreTable));
+//     }
+//     return
+// }

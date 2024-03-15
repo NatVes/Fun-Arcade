@@ -12,7 +12,7 @@ const GameContainer = ({ id, title, image, description }) => {
             <div className="card-body">
                 <h3 className="card-title">{ title }</h3> 
                 <p>{description}</p>
-                <Link to={`/games/${id}`}>
+                <Link to={`/games/${title}`}>
                     <button className="btn">
                       Play Now
                     </button>

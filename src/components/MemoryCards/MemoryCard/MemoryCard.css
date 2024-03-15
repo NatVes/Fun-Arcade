@@ -2,8 +2,8 @@
     position: relative;
 }
 .card-grid img {
-    width: 300px;
-    height: 300px;  
+    width: 350px;
+    height: 350px; 
     border: 2px solid white;  
     border-radius: 10px;
 }

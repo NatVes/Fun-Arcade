@@ -1,4 +1,4 @@
-import "./style.css"
+import "./MemoryCard.css"
 
 function MemoryCard({ card, handleChoice, flipped, disabled }) { 
     
@@ -10,10 +10,10 @@ function MemoryCard({ card, handleChoice, flipped, disabled }) {
     }
 
     return (
-        <div className="col-md-4 col-sm-6 card-grid">
+        <div className="col-md-4 col-sm-6 col-6 card-grid">
             <div className={flipped ? "flipped" : ""}>
-                <img className="front" src={card.src.medium} alt="card front" />
-                <img className="back" src="/images/CardBack.jpg" alt="card back" onClick={handleClick}/>
+                <img className="front img-fluid" src={card.src.medium} alt="card front" />
+                <img className="back img-fluid" src="/images/CardBack.jpg" alt="card back" onClick={handleClick}/>
             </div>
         </div>
     )

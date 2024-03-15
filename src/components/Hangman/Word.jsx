@@ -7,7 +7,7 @@ function Word ({playedWord, rightGuesses}) {
                 {playedWord.split('').map((letter, i) => {
                     return (
                     <span className="letter" key={i}>
-                        {rightGuesses.includes(letter) ? letter : " ___ "}
+                        {rightGuesses.includes(letter) ? letter : ""}
                     </span>
                     )
                 })}

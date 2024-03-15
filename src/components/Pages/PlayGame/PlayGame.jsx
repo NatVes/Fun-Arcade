@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import "./PlayGame.css"
 import MCardLogic from "../../MemoryCards/MCardLogic"
 import gamesData from "../../../games.json"
-// import TicTacToe from "../../TicTacToe/TicTacToe"
+import TicTacToe from "../../TicTacToe/TicTacToe.jsx"
 
 function PlayGame() {
     const {title} = useParams();

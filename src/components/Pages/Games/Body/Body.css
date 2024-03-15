@@ -1,0 +1,9 @@
+/* Body.css */
+.game-containers {
+  display: flex;
+  justify-content: center; /* Aligs horizontally in the center */
+  margin: 20px;
+  padding-top: 150px;
+}
+
+

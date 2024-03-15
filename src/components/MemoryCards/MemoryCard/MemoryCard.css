@@ -1,0 +1,51 @@
+.card-grid {
+    position: relative;
+    display: table;
+}
+.card-grid img {
+    display: block;
+    width: 15vw;
+    height: 15vw; 
+    border: 2px solid white;  
+    border-radius: 10px;
+}
+
+.card-grid .front {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.card-grid .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .card-grid img {
+        width: 35vw;
+        height: 35vw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .card-grid img {
+        width: 10vw;
+        height: 10vw;
+    }
+}

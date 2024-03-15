@@ -1,0 +1,38 @@
+[
+    {
+        "id": "0",
+        "title": "TIC-TAC-TOE",
+        "image": "./images/tic-tac-toe-game.png",
+        "description": "Tic Tac Toe - the classic game of strategy and quick thinking. Can you outsmart your opponent and get three in a row?",
+        "year-created": "first century BC",
+        "players": "2",
+        "skills": "strategy, tactics, observation",
+        "fan-fact": "Games played on three-in-a-row boards can be traced back to ancient Egypt, where such game boards have been found on roofing tiles dating from around 1300 BC. <br /> An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time) and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing.",
+        "data-source": "Wikipedia",
+        "instruction": ""
+    },
+    {
+        "id": "1",
+        "title": "MEMORY GAME",
+        "image": "./images/memory_card.png",
+        "description": "Test your memory and have fun! Flip the cards and find the matching pairs in this classic concentration game.",
+        "year-created": "",
+        "players": "",
+        "skills": "",
+        "fan-fact": "",
+        "data-source": "",
+        "instruction": "Objective: The objective of the game is to match all pairs of cards in the least number of moves. <br /> Gameplay: <br /> Click on two cards to reveal their image. <br /> If the images on the two cards match, they remain face-up. <br /> If the images do not match, both cards are flipped face-down again. <br /> Continue selecting pairs of cards until all pairs are matched. <br /> Scoring: <br /> The game tracks the number of moves you make. <br /> Try to match all pairs in the fewest moves possible to achieve a high score. <br /> Winning: <br /> The game is won when all pairs of cards are matched."
+    },
+    {
+        "id": "2",
+        "title": "HANGMAN",
+        "image": "./images/hangman.jpg",
+        "description": "Hangman: The classic word-guessing game. Can you save the stick figure?",
+        "year-created": "",
+        "players": "",
+        "skills": "",
+        "fan-fact": "",
+        "data-source": "",
+        "instruction": ""
+    }
+]

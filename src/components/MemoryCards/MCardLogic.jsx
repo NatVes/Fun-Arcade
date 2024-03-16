@@ -73,7 +73,13 @@ function MCardLogic() {
                 </div>
             </div>
             <p className="score my-3">Score: {score}</p>
-            <button className="btn" onClick={mixCards}>Start</button>
+            <div className="d-flex justify-content-center">
+                <div className="input-group mb-3" style={{ width: "40%", alignSelf: "center"}} >
+                    <input type="text" className="form-control" placeholder="Enter your name" aria-label="Player's name" aria-describedby="button-addon" />
+                    <button className="btn" type="button" id="button-addon">Save</button>
+                </div>
+            </div>
+            <button className="btn mt-3" onClick={mixCards}>Start</button>
         </div>
     )
 }

@@ -1,0 +1,21 @@
+.title {
+    color:aliceblue;
+    -webkit-text-stroke: 1px rgb(254, 197, 15);
+}
+
+hr {
+    border-color: rgb(254, 197, 15);
+    border-width: 3px;
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+}
+
+ul {
+    color: aliceblue;
+    font-size: 22px;
+    list-style-type: none;
+    margin-top: 20px;
+}

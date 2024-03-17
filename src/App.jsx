@@ -12,16 +12,19 @@ function App() {
 
   return (
     <Router>
-      <div style={{ display: 'flex', height: '100%', direction: "ltr"}}>
+      <div className="d-flex" >
       <ProSidebar />
-      <Routes>
-        <Route path="/" element={<Games />} />
-        <Route path="/games/:title" element={<PlayGame />} />
-        <Route path="/scores" element={<Score />} />
-        <Route path="/funfacts" element={<FunFacts />} />
-        <Route path="/funfacts/:title" element={<FunFactsInfo />}/>
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Games />} />
+          <Route path="/games/:title" element={<PlayGame />} />
+          <Route path="/scores" element={<Score />} />
+          <Route path="/funfacts" element={<FunFacts />} />
+          <Route path="/funfacts/:title" element={<FunFactsInfo />}/>
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+
       </div>
     </Router>
   );

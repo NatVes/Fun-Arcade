@@ -38,35 +38,33 @@ const Navbar = () => {
   function toggleSidebar() {
     setShowSidebar(!showSidebar);
   }
-
+console.log(collapse, showSidebar)
   return (
     <div className="d-flex">
       <Sidebar
-        collapsed={collapse}
+        collapsed={collapse && width >= 768}
         hidden={(width < 768) ? showSidebar : false}
+        backgroundColor="rgb(176, 65, 178)"
+        width="270px"
       >
-        <h2>FUN ARCADE</h2>
+        <br />
         <Menu>
-          <MenuItem component={<Link to="/" />}>
-            <FaGamepad />
-            Games
+          <MenuItem className="d-flex menu-item my-5" icon={<FaGamepad style={{color: "aliceblue", scale: "3"}}/>} component={<Link to="/" />}>
+            <h2 className="ms-2">GAMES</h2>
           </MenuItem>
-          <MenuItem component={<Link to="/scores" />}>
-            <MdOutlineSportsScore />
-            Scores
+          <MenuItem className="d-flex menu-item my-5" icon={<MdOutlineSportsScore style={{color: "aliceblue", scale: "3"}}/>} component={<Link to="/scores" />}>
+            <h2 className="ms-2">SCORES</h2>
           </MenuItem>
-          <MenuItem component={<Link to="/funfacts" />}>
-            <FaExclamation />
-            Fun Facts
+          <MenuItem className="d-flex menu-item my-5" icon={<FaExclamation style={{color: "aliceblue", scale: "3"}}/>} component={<Link to="/funfacts" />}>
+          <h2 className="ms-2">FUN FACTS</h2>
           </MenuItem>
-          <MenuItem component={<Link to="/contact" />}>
-            <IoIosContacts />
-            Contact
+          <MenuItem className="d-flex menu-item my-5" icon={<IoIosContacts style={{color: "aliceblue", scale: "3"}}/>} component={<Link to="/contact" />}>
+          <h2 className="ms-2">CONTACT</h2>
           </MenuItem>
         </Menu>
       </Sidebar>
       <div className={displayNone} onClick={toggleSidebar}>
-      <FaBars className="icon"/>
+      <FaBars className="burger-icon my-3 mx-5"/>
       </div>
     </div>
   );

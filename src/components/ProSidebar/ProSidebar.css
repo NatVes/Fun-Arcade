@@ -2,6 +2,11 @@
     display: none;
 }
 
-.icon {
+.burger-icon {
+    color: aliceblue;
+    scale: 2;
+}
+
+.menu-item {
     color: aliceblue;
 }

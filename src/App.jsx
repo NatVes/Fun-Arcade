@@ -12,10 +12,9 @@ function App() {
 
   return (
     <Router>
+      <div style={{ display: 'flex', height: '100%', direction: "ltr"}}>
       <ProSidebar />
       <Routes>
-        {/* Define routes using the Route component to render different page components at different paths */}
-        {/* Define a default route that will render the Home component */}
         <Route path="/" element={<Games />} />
         <Route path="/games/:title" element={<PlayGame />} />
         <Route path="/scores" element={<Score />} />
@@ -23,6 +22,7 @@ function App() {
         <Route path="/funfacts/:title" element={<FunFactsInfo />}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      </div>
     </Router>
   );
 }

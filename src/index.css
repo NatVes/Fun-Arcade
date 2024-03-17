@@ -9,6 +9,18 @@ body {
     background-size: cover; 
   }
 
+  html,
+body,
+#root,
+#root > div,
+div[data-reactroot] {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
 .btn {
   background-color:var(--pink);
   border: 2px solid var(--yellow);

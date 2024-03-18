@@ -6,8 +6,7 @@ const useFetchData = () => {
 
     useEffect(() => {
         const randomPage = Math.round(Math.random() * (10 - 1) + 1);
-        
-        // const API_KEY = import.meta.env.VITE_API_KEY;
+
         const BASE_URL = `/.netlify/functions/fetch-img?page=${randomPage}`;
         
         fetch(BASE_URL)

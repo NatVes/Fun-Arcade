@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="sidenav">
-      <Sidebar collapsed={!showNav} className="navStyle">
+      <Sidebar collapsed={!showNav} backgroundColor="rgb(176, 65, 178)" className="navStyle">
         <Menu>
           <MenuItem className="menuItemCenter">
             {showNav ? <IoMdClose onClick={toggleSidebar}/>: <GiHamburgerMenu onClick={toggleSidebar} />}

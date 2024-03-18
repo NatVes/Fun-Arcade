@@ -12,17 +12,19 @@ function App() {
 
   return (
     <Router>
+      <div>
       <ProSidebar />
-      <Routes>
-        {/* Define routes using the Route component to render different page components at different paths */}
-        {/* Define a default route that will render the Home component */}
-        <Route path="/" element={<Games />} />
-        <Route path="/games/:title" element={<PlayGame />} />
-        <Route path="/scores" element={<Score />} />
-        <Route path="/funfacts" element={<FunFacts />} />
-        <Route path="/funfacts/:title" element={<FunFactsInfo />}/>
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+        <div>
+          <Routes>
+            <Route path="/" element={<Games />} />
+            <Route path="/games/:title" element={<PlayGame />} />
+            <Route path="/scores" element={<Score />} />
+            <Route path="/funfacts" element={<FunFacts />} />
+            <Route path="/funfacts/:title" element={<FunFactsInfo />}/>
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
     </Router>
   );
 }

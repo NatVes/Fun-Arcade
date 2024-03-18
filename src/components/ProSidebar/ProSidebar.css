@@ -1,0 +1,36 @@
+.sidenav { 
+    position: absolute;
+    transition: all 1s;
+    height: 100%; 
+    width: 25% !important; 
+    font-size: 30px;
+     /* z-index: 1;    */
+}
+
+.navStyle {
+  width: 55% !important;
+}
+
+.ps-sidebar-root { 
+    height: 100%; 
+    /* width: 50%; */
+    /* z-index: 2;   */
+  } 
+
+  .menuItemCenter {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+  }
+
+  .menuItem {
+    margin-bottom: 40px; 
+  }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 200px; 
+  }
+}
+

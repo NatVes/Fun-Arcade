@@ -1,35 +1,46 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "./ProSidebar.css";
 import { FaGamepad } from "react-icons/fa";
 import { MdOutlineSportsScore } from "react-icons/md";
 import { FaExclamation } from "react-icons/fa";
 import { IoIosContacts } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  return (
-    <div>
-      <Sidebar className={Sidebar}>
-        <h2>Fun Arcade</h2>
+  const [showNav, setShowNav] = useState(false);
 
+  // Function to toggle the sidebar visibility
+  const toggleSidebar = () => {
+    setShowNav(!showNav);
+  };
+
+  return (
+    <div className="sidenav">
+      <Sidebar collapsed={!showNav} className="navStyle">
         <Menu>
-          <MenuItem component={<Link to="/" />}>
+          <MenuItem className="menuItemCenter">
+            {showNav ? <IoMdClose onClick={toggleSidebar}/>: <GiHamburgerMenu onClick={toggleSidebar} />}
+            
+          </MenuItem>
+          <MenuItem component={<Link to="/" />} className="menuItem">
             <FaGamepad />
-            Games
+            {showNav ? 'Games' : ''}
+            
           </MenuItem>
-          <MenuItem component={<Link to="/scores" />}>
+          <MenuItem component={<Link to="/scores" />} className="menuItem">
             <MdOutlineSportsScore />
-            Scores
+            {showNav ? 'Scores' : ''}
           </MenuItem>
-          <MenuItem component={<Link to="/funfacts" />}>
+          <MenuItem component={<Link to="/funfacts" />} className="menuItem">
             <FaExclamation />
-            Fun Facts
+            {showNav ? 'Fun Facts' : ''}
           </MenuItem>
-          <MenuItem component={<Link to="/contact" />}>
+          <MenuItem component={<Link to="/contact" />} className="menuItem">
             <IoIosContacts />
-            Contact
+            {showNav ? 'Contact' : ''}
           </MenuItem>
         </Menu>
       </Sidebar>

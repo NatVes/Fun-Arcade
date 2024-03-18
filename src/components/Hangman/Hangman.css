@@ -1,0 +1,57 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 3%;
+    color: black;
+}
+
+.hangman-container {
+    margin: 0 300px !important;
+    background-color: white;
+    border: 2px solid black;
+    width: 70%
+}
+
+.hangman-figure-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.frame {
+    stroke: black;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+
+.figure {
+    /* display: none; */
+    stroke: black;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+
+.word-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.letter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    font-size: 30px;
+    margin: 0 5px;
+    height: 50px;
+    width: 40px;
+}
+
+

@@ -3,7 +3,7 @@
     background-color: #20115500; /* Choose your desired background color */
     padding: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
   }
   

@@ -3,7 +3,7 @@ import ContactUs from './ContactForm/Contact_form'; // Make sure the path is cor
 
 export default function Contact() {
   return (
-    <div>
+    <div  className="game-containers ">
       <ContactUs /> {/* This will render your contact form */}
     </div>
   );

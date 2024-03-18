@@ -5,8 +5,26 @@
 .burger-icon {
     color: aliceblue;
     scale: 2;
+    z-index: 200;
+    position: absolute;
+    margin-left: 30px;
 }
 
 .menu-item {
     color: aliceblue;
 }
+
+.ps-menu-button:hover {
+    background-color: transparent !important;
+    border: 3px solid rgb(254, 197, 15);
+    transition: 0.2s ease-in;
+}
+
+.sidebar {
+    position: fixed !important;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+

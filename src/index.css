@@ -9,10 +9,11 @@ body {
     background-size: cover; 
   }
 
-  html,
+html,
 body,
 #root,
 #root > div,
+#root > div:nth-child(2),
 div[data-reactroot] {
   height: 100%;
   width: 100%;

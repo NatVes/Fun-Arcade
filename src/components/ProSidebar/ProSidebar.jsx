@@ -12,7 +12,7 @@ const Navbar = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [collapse, setCollapse] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
-  const [displayNone, setDisplayNone] = useState("");
+  // const [displayNone, setDisplayNone] = useState("");
 
   function getSize() {
       setWidth(window.innerWidth)
@@ -21,13 +21,13 @@ const Navbar = () => {
   useEffect(() => {
     getSize();
     window.addEventListener("resize", getSize);
-    if(width < 768) {
+    if(width < 992) {
       setCollapse(true);
-      setDisplayNone("");
+      // setDisplayNone("");
       setShowSidebar(true)
     } else {
       setCollapse(false);
-      setDisplayNone("displayNone");
+      // setDisplayNone("displayNone");
     }
 
     return() => {
@@ -37,17 +37,19 @@ const Navbar = () => {
 
   function toggleSidebar() {
     setShowSidebar(!showSidebar);
+    setCollapse(!collapse);
   }
-console.log(collapse, showSidebar)
+
   return (
     <div className="d-flex">
       <Sidebar
-        collapsed={collapse && width >= 768}
-        hidden={(width < 768) ? showSidebar : false}
+        collapsed={!collapse}
+        hidden={(width < 992) ? showSidebar : false}
         backgroundColor="rgb(176, 65, 178)"
         width="270px"
+        collapsedWidth = "70px"
+        className="sidebar"
       >
-        <br />
         <Menu>
           <MenuItem className="d-flex menu-item my-5" icon={<FaGamepad style={{color: "aliceblue", scale: "3"}}/>} component={<Link to="/" />}>
             <h2 className="ms-2">GAMES</h2>
@@ -63,8 +65,8 @@ console.log(collapse, showSidebar)
           </MenuItem>
         </Menu>
       </Sidebar>
-      <div className={displayNone} onClick={toggleSidebar}>
-      <FaBars className="burger-icon my-3 mx-5"/>
+      <div  onClick={toggleSidebar}>
+      <FaBars className="burger-icon my-3"/>
       </div>
     </div>
   );

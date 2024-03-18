@@ -12,19 +12,18 @@ function App() {
 
   return (
     <Router>
-      <div className="d-flex" >
-      <ProSidebar />
       <div>
-        <Routes>
-          <Route path="/" element={<Games />} />
-          <Route path="/games/:title" element={<PlayGame />} />
-          <Route path="/scores" element={<Score />} />
-          <Route path="/funfacts" element={<FunFacts />} />
-          <Route path="/funfacts/:title" element={<FunFactsInfo />}/>
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-
+      <ProSidebar />
+        <div>
+          <Routes>
+            <Route path="/" element={<Games />} />
+            <Route path="/games/:title" element={<PlayGame />} />
+            <Route path="/scores" element={<Score />} />
+            <Route path="/funfacts" element={<FunFacts />} />
+            <Route path="/funfacts/:title" element={<FunFactsInfo />}/>
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

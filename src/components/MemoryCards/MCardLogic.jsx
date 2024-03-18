@@ -108,7 +108,7 @@ function MCardLogic() {
                     <button className="btn" type="button" id="button-addon" onClick={saveScore}>Save</button>
                 </div>
             </div>
-            <button className="btn mt-3" onClick={mixCards}>Start</button>
+            <button className="btn mt-3 mb-5" onClick={mixCards}>Start</button>
         </div>
     )
 }

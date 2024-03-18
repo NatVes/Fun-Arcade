@@ -26,21 +26,21 @@ const Navbar = () => {
             
           </MenuItem>
           <MenuItem component={<Link to="/" />} className="menuItem">
-            <FaGamepad />
-            {showNav ? 'Games' : ''}
+            <FaGamepad className="me-3"/>
+            {showNav ? 'GAMES' : ''}
             
           </MenuItem>
           <MenuItem component={<Link to="/scores" />} className="menuItem">
-            <MdOutlineSportsScore />
-            {showNav ? 'Scores' : ''}
+            <MdOutlineSportsScore className="me-3"/>
+            {showNav ? 'SCORES' : ''}
           </MenuItem>
           <MenuItem component={<Link to="/funfacts" />} className="menuItem">
-            <FaExclamation />
-            {showNav ? 'Fun Facts' : ''}
+            <FaExclamation className="me-2"/>
+            {showNav ? 'FUN FACTS' : ''}
           </MenuItem>
           <MenuItem component={<Link to="/contact" />} className="menuItem">
-            <IoIosContacts />
-            {showNav ? 'Contact' : ''}
+            <IoIosContacts className="me-3"/>
+            {showNav ? 'CONTACT' : ''}
           </MenuItem>
         </Menu>
       </Sidebar>

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Score() {
   return (
-    <div>
+    <section className="game-containers  ">
       <h2>Scores </h2>
-    </div>
+    </section>
   )
 }

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function FunFacts() {
   return (
-    <div>
+    <section className="game-containers ">
       <h2>Fun Facts</h2>
-    </div>
+    </section>
   )
 }

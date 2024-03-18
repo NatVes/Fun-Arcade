@@ -1,22 +1,25 @@
-.sidenav {
+.sidenav { 
     position: absolute;
     transition: all 1s;
-    height: 100%;
-    width: 100%;
-    font-size: 40px;
-    z-index: 1;
-    overflow: auto; 
+    height: 100%; 
+    width: 25% !important; 
+    font-size: 30px;
+     /* z-index: 1;    */
 }
 
-.ps-sidebar-root {
-    height: 120%; 
-    width: 80%;
-    z-index: 2;
-  }
+.navStyle {
+  width: 55% !important;
+}
+
+.ps-sidebar-root { 
+    height: 100%; 
+    /* width: 50%; */
+    /* z-index: 2;   */
+  } 
 
   .menuItemCenter {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-bottom: 60px;
   }
 
@@ -26,8 +29,8 @@
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .sidenav {
-      width: 200px; 
-    }
+  .sidenav {
+    width: 200px; 
+  }
 }
 

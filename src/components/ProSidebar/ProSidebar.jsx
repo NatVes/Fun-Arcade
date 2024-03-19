@@ -19,27 +19,25 @@ const Navbar = () => {
 
   return (
     <div className="sidenav">
-      <Sidebar collapsed={!showNav} backgroundColor="rgb(176, 65, 178)" className="navStyle">
+      <Sidebar collapsed={!showNav} backgroundColor="rgb(176, 65, 178)" width="270px" collapsedWidth="90px" className="navStyle">
         <Menu>
           <MenuItem className="menuItemCenter">
             {showNav ? <IoMdClose onClick={toggleSidebar}/>: <GiHamburgerMenu onClick={toggleSidebar} />}
-            
           </MenuItem>
           <MenuItem component={<Link to="/" />} className="menuItem">
-            <FaGamepad className="me-3"/>
+            <FaGamepad className="me-2 navIcon"/>
             {showNav ? 'GAMES' : ''}
-            
           </MenuItem>
           <MenuItem component={<Link to="/scores" />} className="menuItem">
-            <MdOutlineSportsScore className="me-3"/>
+            <MdOutlineSportsScore className="me-2 navIcon"/>
             {showNav ? 'SCORES' : ''}
           </MenuItem>
           <MenuItem component={<Link to="/funfacts" />} className="menuItem">
-            <FaExclamation className="me-1"/>
+            <FaExclamation className="me-1 navIcon"/>
             {showNav ? 'FUN FACTS' : ''}
           </MenuItem>
           <MenuItem component={<Link to="/contact" />} className="menuItem">
-            <IoIosContacts className="me-3"/>
+            <IoIosContacts className="me-2 navIcon"/>
             {showNav ? 'CONTACT' : ''}
           </MenuItem>
         </Menu>

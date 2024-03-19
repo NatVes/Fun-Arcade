@@ -11,7 +11,7 @@ const Header = () => {
     animate={{ opacity: 1 }}
     transition={{ duration: 1.5 }}
     className="header mx-sm-auto my-5">
-      <img src="gameLogo" alt="Game Logo" />
+      <img src={gameLogo} alt="Game Logo" />
     </motion.header>
   );
 };

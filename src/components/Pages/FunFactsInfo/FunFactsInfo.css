@@ -2,7 +2,13 @@
     color:aliceblue;
     -webkit-text-stroke: 1px rgb(254, 197, 15);
 }
-.introduction {
+
+hr {
+    border-color: rgb(254, 197, 15);
+    border-width: 3px;
+}
+
+.info {
     color: aliceblue;
     font-size: 22px;
     margin-bottom: 10px;

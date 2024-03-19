@@ -25,10 +25,10 @@ function PlayGame() {
   return (
     <>
     <div className="container">
-        <h1 className="title text-center mb-4">{selectedGame && selectedGame.title}</h1>
+        <h1 className="title text-center my-5">{selectedGame && selectedGame.title}</h1>
         <div className="row justify-content-center">
-            <div className="col-8">
-            {selectedGame && selectedGame.instruction.split('<br />').map((line, index) => (<p key={index} className="intro1">{line}</p>))}
+            <div className="col-10">
+            {selectedGame && selectedGame.instruction.split('<br />').map((line, index) => (<p key={index} className="introduction">{line}</p>))}
             </div>
         </div>
     </div>
@@ -37,7 +37,6 @@ function PlayGame() {
     </div>
     </>
 )
-
 }
 
 export default PlayGame

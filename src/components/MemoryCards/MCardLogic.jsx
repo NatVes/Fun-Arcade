@@ -6,9 +6,41 @@ function MCardLogic() {
     const { photos, reset } = useFetchData();  
     const [cards, setCards] = useState([]);
     const [score, setScore] = useState(0);
+    const [name, setName] = useState("");
     const [firstChoice, setFirstChoice] = useState(null);
     const [secondChoice, setSecondChoice] = useState(null); 
     const [disabled, setDisabled] = useState(false);
+
+    let MCardScore = [];
+
+    const checkAdd = () => {
+        var storedData = JSON.parse(localStorage.getItem("MCardScore"));
+
+        if (storedData !== null) {
+            MCardScore = storedData;
+        }
+    }
+
+    checkAdd();
+
+    const handleInputChange = (event) => {
+        const playersName = event.target.value;
+        setName(playersName);
+    }
+
+    const saveScore = (event) => {
+        event.preventDefault();
+
+        const currentScore = {
+            name: name,
+            score: score,
+        };
+
+        MCardScore.push(currentScore);
+
+        localStorage.setItem("MCardScore", JSON.stringify(MCardScore));
+        setName("")
+    }
 
     const mixCards = () => {
         const mixedCards = [...photos, ...photos]
@@ -18,7 +50,7 @@ function MCardLogic() {
         setFirstChoice(null);
         setSecondChoice(null)
         setCards(mixedCards);
-        setScore(0);//use function to save to Local Storage here?
+        setScore(0);
         reset();
     }
 
@@ -57,12 +89,9 @@ function MCardLogic() {
         mixCards()
     }, [])
 
-    useEffect(() => {
-        localStorage.setItem("MCardScore", JSON.stringify(score))
-    }, [score]);
-
+    
     return (
-        <div className="container my-5">
+        <div className="container my-3">
             <div className="row justify-content-center">
                 <div className="col">
                     <div className="row row-gap-4 justify-content-center">
@@ -73,26 +102,15 @@ function MCardLogic() {
                 </div>
             </div>
             <p className="score my-3">Score: {score}</p>
-            <button className="btn" onClick={mixCards}>Start</button>
+            <div className="d-flex justify-content-center">
+                <div className="input-group mb-3" style={{ width: "40%", alignSelf: "center"}} >
+                    <input value={name} type="text" className="form-control" placeholder="Enter your name" aria-label="Player's name" aria-describedby="button-addon" onChange={handleInputChange}/>
+                    <button className="btn" type="button" id="button-addon" onClick={saveScore}>Save</button>
+                </div>
+            </div>
+            <button className="btn mt-3" onClick={mixCards}>Start</button>
         </div>
     )
 }
 
 export default MCardLogic;
-
-
-// function LocalStorage() {
-//     const scoreTable = [];
-
-//     function checkAdd() {    
-//         let storedData = JSON.parse(localStorage.getItem("scoreTable"));    
-//         if (storedData !== null) {
-//             scoreTable = storedData;
-//         }
-//     }
-
-//     function storeUserData() {
-//         localStorage.setItem("scoreTable", JSON.stringify(scoreTable));
-//     }
-//     return
-// }

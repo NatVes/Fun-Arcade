@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactUs from './ContactForm/Contact_form'; // Make sure the path is correct
+import ContactUs from './ContactForm/Contact_form.jsx'; // Make sure the path is correct
 
 export default function Contact() {
   return (

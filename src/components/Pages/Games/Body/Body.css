@@ -2,8 +2,8 @@
 .game-containers {
   display: flex;
   justify-content: center; /* Aligs horizontally in the center */
-  margin: 0 10px 0 110px !important;
-  padding: 0 10px !important;
+  margin: 0 200px 0 0 !important;
+  padding: 50px 0 0 10px !important;
   /* padding-top: 150px; */
 }
 

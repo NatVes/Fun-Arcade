@@ -2,13 +2,13 @@
     position: absolute;
     transition: all 1s;
     height: 100%; 
-    width: 25% !important; 
+    width: 16% !important; 
     font-size: 30px;
      /* z-index: 1;    */
 }
 
 .navStyle {
-  width: 55% !important;
+  width: 50% !important;
 }
 
 .ps-sidebar-root { 
@@ -19,18 +19,28 @@
 
   .menuItemCenter {
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 60px;
+    justify-content: flex-start;
+    margin-bottom: 70px;
+    font-size: 50px;
   }
 
   .menuItem {
     margin-bottom: 40px; 
   }
 
+  .navIcon {
+    font-size: 50px;
+  }
+
+
 /* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .sidenav {
     width: 200px; 
+    height: 100vh; 
+  }
+  .navIcon {
+    font-size: 40px; 
   }
 }
 

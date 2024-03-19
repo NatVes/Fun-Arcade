@@ -4,6 +4,8 @@ import Timer from "./Timer";
 import HangmanFigure from "./HangmanFigure";
 import Word from "./Word";
 import WrongGuesses from "./WrongGuesses";
+import Restart from "./Restart";
+import GameOver from "./GameOver";
 import './Hangman.css'
 
 const words = [
@@ -21,13 +23,12 @@ const words = [
 
 let playedWord = words[Math.floor(Math.random() * words.length)];
 
-
 function Hangman () {
     const [playable, setPlayable] = useState(true);
     const [rightGuesses, setRightGuesses] = useState([]);
     const [wrongGuesses, setWrongGuesses] = useState([]);
-    const [showError, setShowError] = useState(false);
-
+    const [gameOver, setGameOver] = useState(false);
+    
     useEffect(() => {
         const sortLetter = event => {
             const{key, keycode} = event;
@@ -48,17 +49,25 @@ function Hangman () {
         window.addEventListener('keydown', sortLetter);
     },);
 
-    return (
+    if (wrongGuesses.length < 6) {
+        return ( 
         <div className="hangman-container">
             <Header />
             <Timer />
             <div className="game-body">
-                <HangmanFigure />
+                <HangmanFigure wrongGuesses={wrongGuesses} />
                 <WrongGuesses wrongGuesses={wrongGuesses} />
             </div>
             <Word playedWord={playedWord} rightGuesses={rightGuesses} />
+            <Restart />
         </ div>
-    )
+    ) } else { 
+        return (
+            <div>
+                <GameOver />
+            </div>
+        )
+    }
 };
 
 

@@ -29,6 +29,12 @@
     margin-bottom: 40px; 
   }
 
+  .ps-menu-button:hover {
+    background-color: transparent !important;
+    border: 3px solid rgb(254, 197, 15);
+    transition: 0.2s ease-in;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .sidenav {

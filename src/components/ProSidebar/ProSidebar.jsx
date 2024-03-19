@@ -35,7 +35,7 @@ const Navbar = () => {
             {showNav ? 'SCORES' : ''}
           </MenuItem>
           <MenuItem component={<Link to="/funfacts" />} className="menuItem">
-            <FaExclamation className="me-2"/>
+            <FaExclamation className="me-1"/>
             {showNav ? 'FUN FACTS' : ''}
           </MenuItem>
           <MenuItem component={<Link to="/contact" />} className="menuItem">

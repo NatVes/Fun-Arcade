@@ -3,24 +3,25 @@ import "./PlayGame.css"
 import MCardLogic from "../../MemoryCards/MCardLogic"
 import gamesData from "../../../games.json"
 import TicTacToe from "../../TicTacToe/TicTacToe.jsx"
+import Hangman from '../../Hangman/Hangman.jsx'
 import { motion } from "framer-motion"
 
 function PlayGame() {
-    const {title} = useParams();
-    let play;
-    switch (title) {
-        case "MEMORY GAME":
-            play = <MCardLogic />;
-            break;
-        case "TIC-TAC-TOE":
-            play = <TicTacToe />;
-            break;
-        case "HANGMAN":
-            play = <Hangman />;
-            break;
-    }
+  const { title } = useParams();
+  let play;
+  switch (title) {
+    case "MEMORY GAME":
+      play = <MCardLogic />;
+      break;
+    case "TIC-TAC-TOE":
+      play = <TicTacToe />;
+      break;
+    case "HANGMAN":
+      play = <Hangman />;
+      break;
+  }
 
-    const selectedGame = gamesData.find(game => game.title === title);
+  const selectedGame = gamesData.find((game) => game.title === title);
 
     return (
         <>
@@ -38,7 +39,7 @@ function PlayGame() {
             transition={{ delay: 0.5, duration: 1.5 }}
             className="row justify-content-center">
                 <div className="col-10">
-                {selectedGame && selectedGame.instruction.split('<br />').map((line, index) => (<p key={index} className="intro">{line}</p>))}
+                {selectedGame && selectedGame.instruction.split('<br />').map((line, index) => (<p key={index} className="introduction">{line}</p>))}
                 </div>
             </motion.div>
         </div>

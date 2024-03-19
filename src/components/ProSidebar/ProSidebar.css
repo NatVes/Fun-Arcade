@@ -1,18 +1,34 @@
-.displayNone {
-    display: none;
+.sidenav { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transition: all 1s;
+    height: 100%; 
+    width: 16% !important; 
+    font-size: 30px;
+    z-index: 10;   
 }
 
-.burger-icon {
-    color: aliceblue;
-    scale: 2;
-    z-index: 200;
-    position: absolute;
-    margin-left: 30px;
-}
+/* .navStyle {
+  width: 50% !important;
+} */
 
-.menu-item {
-    color: aliceblue;
-}
+.ps-sidebar-root { 
+    height: 100%; 
+    /* width: 50%; */
+    /* z-index: 2;   */
+  } 
+
+  .menuItemCenter {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 70px;
+    font-size: 50px;
+  }
+
+  .menuItem {
+    margin-bottom: 40px; 
+  }
 
 .ps-menu-button:hover {
     background-color: transparent !important;
@@ -20,11 +36,18 @@
     transition: 0.2s ease-in;
 }
 
-.sidebar {
-    position: fixed !important;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    z-index: 100;
+.navIcon {
+    font-size: 50px;
+  }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 500px) {
+  .sidenav {
+    width: 200px; 
+    height: 100vh; 
+  }
+  .navIcon {
+    font-size: 40px; 
+  }
 }
 

@@ -61,7 +61,7 @@ const TicTacToe = () => {
   };
 
   return (
-    <div className="tic-tac-toe">
+    <div className="tic-tac-toe text-center">
       <div className="board">
         {board.map((cell, index) => (
           <div key={index} className="cell" onClick={() => handleClick(index)}>

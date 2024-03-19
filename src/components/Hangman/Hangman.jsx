@@ -52,9 +52,11 @@ function Hangman () {
         <div className="hangman-container">
             <Header />
             <Timer />
-            <HangmanFigure />
+            <div className="game-body">
+                <HangmanFigure />
+                <WrongGuesses wrongGuesses={wrongGuesses} />
+            </div>
             <Word playedWord={playedWord} rightGuesses={rightGuesses} />
-            <WrongGuesses wrongGuesses={wrongGuesses} />
         </ div>
     )
 };

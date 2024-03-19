@@ -17,12 +17,12 @@
         "title": "MEMORY GAME",
         "image": "./images/memory_card.png",
         "description": "Test your memory and have fun! Flip the cards and find the matching pairs in this classic concentration game.",
-        "year-created": "",
-        "players": "",
-        "skills": "",
-        "fun-fact": "",
-        "data-source": "",
-        "source-link": "",
+        "year-created": "Memory-style games date back centuries. One of the oldest is a tile-matching game found in ancient Egyptian tombs.",
+        "players": "1",
+        "skills": "Great memory",
+        "fun-fact": "The Name Game: The classic Concentration game has also been called Memory, Pelmanism, and other variations over time.<br />Serious Science: Memory games are often used in psychology research and experiments about memory processes and cognitive development.<br />World Records: There are competitive memory game champions holding astonishing records for memorizing card sequences, images, and digits with insane speed.<br />A TV Show: In 1971, an American television game show called “Memory Game” aired on NBC. Hosted by Joe Garagiola, it challenged contestants’ memory skills.",
+        "data-source": "Wikipedia",
+        "source-link": "https://en.wikipedia.org/wiki/Memory_Game",
         "instruction": "Objective: The objective of the game is to match all pairs of cards in the least number of moves. <br /> Gameplay: <br /> Click on two cards to reveal their image. <br /> If the images on the two cards match, they remain face-up. <br /> If the images do not match, both cards are flipped face-down again. <br /> Continue selecting pairs of cards until all pairs are matched. <br /> Scoring: <br /> The game tracks the number of moves you make. <br /> Try to match all pairs in the fewest moves possible to achieve a high score. <br /> Winning: <br /> The game is won when all pairs of cards are matched."
     },
     {
@@ -30,12 +30,12 @@
         "title": "HANGMAN",
         "image": "./images/hangman.jpg",
         "description": "Hangman: The classic word-guessing game. Can you save the stick figure?",
-        "year-created": "",
-        "players": "",
-        "skills": "",
-        "fun-fact": "",
-        "data-source": "",
-        "source-link": "",
-        "instruction": ""
+        "year-created": "19th Century",
+        "players": "1 or more",
+        "skills": "Logick, strategy, vocabulary",
+        "fun-fact": "Grim Origins:  While the exact origins are unknown, many sources point to a Victorian-era (19th century) game called The Rite of Words and Life. This was a grim ordeal where a person facing the death penalty would be given a chance to guess a word chosen by the executioner. Each wrong guess would bring them closer to the actual hanging.<br />Tamer Transformation:  Luckily, the game evolved into a less deadly pastime.  The word-guessing focus remained, but instead of literal hanging, incorrect guesses led to drawing parts of the hangman stick figure.<br />Victorian Publications:  References to Hangman appear in late 19th century books, like Alice Gomme's  Traditional Games of England, Scotland, and Ireland (1894), where it was called Birds, Beasts, and Fishes. At this point, it didn't have the hanging imagery yet.<br />Modern Popularity: The version we know today, complete with the hangman drawing, gained widespread popularity in the 20th century.",
+        "data-source": "Wikipedia",
+        "source-link": "https://en.wikipedia.org/wiki/Hangman_(game)",
+        "instruction": "Hangman is a guessing game for one or more players. One player, in this case the computer, thinks of a word, phrase, or sentence and the other(s) tries to guess it by suggesting letters or numbers within a certain number of guesses."
     }
 ]

@@ -7,7 +7,7 @@ function Timer (props) {
         counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
     }, [counter]); 
     return (
-        <div>Countdown: {counter}</div>
+        <div className="timer">Time Remaining: {counter}</div>
     );
 }
 export default Timer;

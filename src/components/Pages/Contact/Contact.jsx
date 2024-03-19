@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import ContactUs from './ContactForm/Contact_form.jsx'; // Make sure the path is correct
 
 export default function Contact() {
   return (
     <div>
-      <h2>Contact</h2>
+      <ContactUs /> {/* This will render your contact form */}
     </div>
-  )
+  );
 }

@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #f6d9ff;
+    --primary-color: #0d0d0d;
+    --secondary-color: #fca4ff;
+    --text-color: #ffffff;
+}
+
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --primary-color: #ffffff;
+    --secondary-color: #000;
+    --text-color: #000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+    border-radius: 4px;
+}
+
+.contact__form .form-control {
+    padding: 1.375rem .75rem;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 1rem; /* Adds space below each input */
+    border-radius: 4px; /* Ensures rounded corners */
+}
+
+address,
+.sec_sp p {
+    font-size: 22px;
+}
+
+
+
+/* .container {
+    margin: 0 120px !important;
+} */
+

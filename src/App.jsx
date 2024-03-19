@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div>
       <ProSidebar />
-        <div>
+        <div className="d-flex flex-column">
           <Routes>
             <Route path="/" element={<Games />} />
             <Route path="/games/:title" element={<PlayGame />} />

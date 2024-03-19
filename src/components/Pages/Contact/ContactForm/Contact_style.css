@@ -29,6 +29,13 @@ body {
     border-radius: 4px; /* Ensures rounded corners */
 }
 
-.container {
-    margin: 0 120px !important;
+address,
+.sec_sp p {
+    font-size: 22px;
 }
+
+
+
+/* .container {
+    margin: 0 120px !important;
+} */

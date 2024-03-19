@@ -91,7 +91,7 @@ function MCardLogic() {
 
     
     return (
-        <div className="container my-5">
+        <div className="container my-3">
             <div className="row justify-content-center">
                 <div className="col">
                     <div className="row row-gap-4 justify-content-center">

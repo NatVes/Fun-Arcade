@@ -1,0 +1,43 @@
+.title {
+    color:aliceblue;
+    -webkit-text-stroke: 1px rgb(254, 197, 15);
+}
+
+hr {
+    border-color: rgb(254, 197, 15);
+    border-width: 3px;
+}
+
+.table-cell h3 {
+    color: aliceblue;
+    align-self: center;
+    margin-left: 20px;
+    background-color: transparent;
+}
+
+.table img {
+    height: 12vw;
+    display: block;
+}
+
+.table {
+    display: table;
+    list-style-type: none;
+}
+
+.table-cell {
+    display: table-cell;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 2000px) {
+    .table img {
+        height: 8vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table img {
+        height: 25vw;
+    }
+}

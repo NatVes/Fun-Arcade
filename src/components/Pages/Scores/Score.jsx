@@ -4,7 +4,6 @@ import "./Score.css"
 export default function Score() {
 
   let MCardScore = JSON.parse(localStorage.getItem("MCardScore"));
-  console.log(MCardScore)
 
   return (
     <div className="container">
@@ -16,7 +15,7 @@ export default function Score() {
         </div>
         <div className="col-md-4">
           <h2>MEMORY GAME</h2>
-            {MCardScore.map((score, index) => (
+            {MCardScore && MCardScore.map((score, index) => (
               <ul key={index}>
                   <ScoreTable name={score.name} score={score.score} />
               </ul>

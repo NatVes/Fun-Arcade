@@ -3,7 +3,7 @@ import Tile from './Tile'; // Importing the Tile component for rendering individ
 import Strike from './Strike'; // Importing the Strike component for rendering strike lines
 import GameOver from './GameOver'; // Importing the GameOver component for displaying game outcome
 import Reset from './Reset'; // Importing the Reset component for resetting the game
-import './TickTacToe.css';
+import './TicTacToe.css';
 
 // Initializing the initial state of the game board with 9 null values
 const initialBoard = Array(9).fill(null);

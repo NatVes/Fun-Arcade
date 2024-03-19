@@ -33,6 +33,7 @@
 .ps-menu-button:hover {
     background-color: transparent !important;
     border: 3px solid rgb(254, 197, 15);
+    scale: 0.9;
     transition: 0.2s ease-in;
 }
 

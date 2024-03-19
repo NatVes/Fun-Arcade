@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useFetchData from "../../utils/API";
-import MemoryCard from "./MemoryCard/MemoryCard"
+import MemoryCard from "./MemoryCard/MemoryCard";
+import { motion } from "framer-motion";
 
 function MCardLogic() { 
     const { photos, reset } = useFetchData();  
@@ -91,24 +92,57 @@ function MCardLogic() {
 
     
     return (
-        <div className="container my-3">
+        <div className="container my-3 text-center">
             <div className="row justify-content-center">
-                <div className="col">
-                    <div className="row row-gap-4 justify-content-center">
-                        {cards && cards.map((card) => (
-                        <MemoryCard key={card.uniqueId} card={card} handleChoice={handleChoice} flipped={card === firstChoice || card === secondChoice || card.matched} disabled={disabled} />
+                <div className="col-lg-9 col-xl-12">
+                    <div 
+                    className="row row-gap-4 justify-content-center">
+                        {cards && cards.map((card, i) => (
+                        <MemoryCard
+                        i={i}
+                        key={card.uniqueId} 
+                        card={card} 
+                        handleChoice={handleChoice} 
+                        flipped={card === firstChoice || card === secondChoice || card.matched}     
+                        disabled={disabled} />
                         ))}
                     </div>
                 </div>
             </div>
-            <p className="score my-3">Score: {score}</p>
-            <div className="d-flex justify-content-center">
-                <div className="input-group mb-3" style={{ width: "40%", alignSelf: "center"}} >
-                    <input value={name} type="text" className="form-control" placeholder="Enter your name" aria-label="Player's name" aria-describedby="button-addon" onChange={handleInputChange}/>
-                    <button className="btn" type="button" id="button-addon" onClick={saveScore}>Save</button>
+            <motion.div
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.7, duration: 1.5, type: "spring", stiffness: 120 }}
+            >
+                <p className="score my-3">Score: {score}</p>
+                <div className="d-flex justify-content-center">
+                    <div className="input-group mb-3" style={{ width: "50%", alignSelf: "center"}} >
+                        <input value={name} type="text" className="form-control" placeholder="Enter your name" aria-label="Player's name" aria-describedby="button-addon" onChange={handleInputChange}/>
+                        <motion.button 
+                        whileHover={{ 
+                            scale: 1.1,
+                            textShadow: "0px 0px 8px rgb(255,255,255)",
+                            boxShadow: "0px 0px 8px rgb(255,255,255)"
+                        }}
+                        transition={{ duration: 0.05 }}
+                        className="btn" type="button" id="button-addon" onClick={saveScore}
+                        >
+                            Save
+                        </motion.button>
+                    </div>
                 </div>
-            </div>
-            <button className="btn mt-3" onClick={mixCards}>Start</button>
+                <motion.button 
+                whileHover={{ 
+                    scale: 1.1,
+                    textShadow: "0px 0px 8px rgb(255,255,255)",
+                    boxShadow: "0px 0px 8px rgb(255,255,255)"
+                }}
+                transition={{ duration: 0.05 }} 
+                className="btn mt-3 mb-5" onClick={mixCards}
+                >
+                    Start
+                </motion.button>
+            </motion.div>
         </div>
     )
 }

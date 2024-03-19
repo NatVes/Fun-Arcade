@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "./ProSidebar.css";
-import { FaGamepad, FaExclamation, FaBars } from "react-icons/fa";
+import { FaGamepad, FaExclamation } from "react-icons/fa";
 import { MdOutlineSportsScore } from "react-icons/md";
 import { IoIosContacts } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -41,9 +41,6 @@ const Navbar = () => {
           </MenuItem>
         </Menu>
       </Sidebar>
-      <div  onClick={toggleSidebar}>
-      <FaBars className="burger-icon my-3"/>
-      </div>
     </div>
   );
 };

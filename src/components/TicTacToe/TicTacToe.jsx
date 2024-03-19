@@ -73,7 +73,7 @@ const TicTacToe = () => {
 
   // JSX code to render the Tic Tac Toe game board, status, and scores
   return (
-    <div className="tic-tac-toe">
+    <div className="tic-tac-toe text-center">
       <div className="board">
         {/* Map through each cell in the board array and render a Tile component for each cell */}
         {board.map((cell, index) => (

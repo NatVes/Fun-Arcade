@@ -3,7 +3,7 @@ import ContactUs from './ContactForm/Contact_form.jsx'; // Make sure the path is
 
 export default function Contact() {
   return (
-    <div  className="game-containers ">
+    <div>
       <ContactUs /> {/* This will render your contact form */}
     </div>
   );

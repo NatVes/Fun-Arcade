@@ -4,6 +4,7 @@ import './Header.css'; // Import the CSS file for styling
 import gameLogo from '../../../../assets/icons/Logo.png'
 import { motion } from 'framer-motion';
 
+
 const Header = () => {
   return (
     <motion.header 

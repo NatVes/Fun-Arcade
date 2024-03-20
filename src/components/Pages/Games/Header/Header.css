@@ -16,3 +16,16 @@
   .header img:hover {
     transform: scale(1.1); /* Applying a scaling effect on hover */
   }
+
+  @media screen and (max-width: 768px) {
+    /* .header {
+      justify-content:right; 
+      margin-left: auto;
+    } */
+
+    .header img {
+      max-width: 75%;
+      /* height: auto; */
+      transition: transform 0.3s ease-in-out; /* Adding a smooth transition for the transform property */
+    }
+  }

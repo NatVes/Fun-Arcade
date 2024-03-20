@@ -1,5 +1,5 @@
 import React from "react"; 
-import '../ContactForm/Contact_style.css';
+import './Contact_style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import { contactConfig } from "./content_option"
 import { motion } from "framer-motion";

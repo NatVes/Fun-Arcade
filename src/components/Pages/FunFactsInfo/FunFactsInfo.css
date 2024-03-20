@@ -13,3 +13,12 @@ hr {
     font-size: 22px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 768px){
+    .table {
+        display: table;
+        list-style-type: none;
+        width: 80% !important;
+        padding: 61px !important
+    }
+}

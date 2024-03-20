@@ -34,9 +34,11 @@ address,
     font-size: 22px;
 }
 
-
-
-/* .container {
-    margin: 0 120px !important;
-} */
+@media screen and (max-width: 768px){
+    .formContainer {
+       
+     margin-left: 102px
+        
+    }
+}
 

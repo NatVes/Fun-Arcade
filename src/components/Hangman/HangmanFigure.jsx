@@ -15,7 +15,7 @@ function HangmanFigure () {
                 
 
                 {/* Head */}
-                <circle cx="45" cy="100" r="30" fill="white" className="figure" />
+                <circle cx="45" cy="100" r="30" fill="none" className="figure" />
 
                 {/* Body */}
                 <line x1="45" x2="45" y1="130" y2="220" className="figure"/>

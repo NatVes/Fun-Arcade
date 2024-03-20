@@ -26,8 +26,9 @@
     width: 70%;
     margin-bottom: 2%;
 }
-.wrong-guess {
+.wrong-guess-container {
     width: 40%;
+    color: black;
 }
 
 .frame {

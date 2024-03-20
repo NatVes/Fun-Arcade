@@ -3,15 +3,15 @@ import React from "react";
 function HangmanFigure () {
     return (
         <div className="hangman-figure-container">
-            <svg height="380px" className="hangman-figure">
+            <svg height="330px" className="hangman-figure">
                 {/* Frame Base */}
-                <line x1="140" x2="220" y1="350" y2="350" className="frame"/>
+                <line x1="140" x2="220" y1="320" y2="320" className="frame"/>
                 {/* Frame Up */}
-                <line x1="180" x2="180" y1="10" y2="350" className="frame"/>
+                <line x1="180" x2="180" y1="20" y2="320" className="frame"/>
                 {/* Frame Top-bar */}
-                <line x1="45" x2="180" y1="10" y2="10" className="frame"/>
+                <line x1="45" x2="180" y1="20" y2="20" className="frame"/>
                 {/* Frame Hang */}
-                <line x1="45" x2="45" y1="10" y2="70" className="frame"/>
+                <line x1="45" x2="45" y1="20" y2="70" className="frame"/>
                 
 
                 {/* Head */}

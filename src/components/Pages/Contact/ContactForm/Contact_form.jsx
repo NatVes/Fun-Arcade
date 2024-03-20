@@ -9,8 +9,8 @@ export default function ContactUs() {
 
   return (
       <Container>
-        <Row className="mb-5 mt-3">
-          <Col lg="8">
+        <Row className="mb-5 mt-3 justify-content-center justify-content-xxl-start">
+          <Col lg="8" md="10">
             <motion.h1 
             initial={{ y: -250 }} 
             animate={{ y: 0 }}
@@ -19,8 +19,8 @@ export default function ContactUs() {
             <hr />
           </Col>
         </Row>
-        <Row className="sec_sp">
-          <Col lg="5" className="mb-5">
+        <Row className="sec_sp justify-content-center justify-content-xxl-start">
+          <Col xl="5" lg="8" md="10" className="mb-5">
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -44,7 +44,7 @@ export default function ContactUs() {
             <p>{contactConfig.description}</p>
             </motion.div>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col  lg="6" md="10" className="d-flex align-items-center">
             <motion.form  
             initial={{ x: "100vw" }}
             animate={{ x: 0 }}

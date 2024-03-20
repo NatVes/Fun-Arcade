@@ -10,15 +10,20 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [hidden, setHidden] = useState("hidden")
 
   // Function to toggle the sidebar visibility
   const toggleSidebar = () => {
     setShowNav(!showNav);
   };
 
+  const changeHidden = () => {
+    setHidden(h => h === "hidden" ? "" : "hidden")
+  }
+
   return (
     <div className="sidenav">
-      <Sidebar collapsed={!showNav} backgroundColor="rgb(176, 65, 178)" width="270px" collapsedWidth="90px" className="navStyle">
+      <Sidebar collapsed={!showNav} backgroundColor="rgb(176, 65, 178)" width="270px" collapsedWidth="90px" className={`navStyle ${hidden}`}>
         <Menu>
           <MenuItem className="menuItemCenter">
             {showNav ? <IoMdClose onClick={toggleSidebar}/>: <GiHamburgerMenu onClick={toggleSidebar} />}
@@ -39,8 +44,11 @@ const Navbar = () => {
             <IoIosContacts className="me-2 navIcon"/>
             {showNav ? 'CONTACT' : ''}
           </MenuItem>
-        </Menu>
+        </Menu>        
       </Sidebar>
+      <div className={`sm-burger ${!hidden ? "active" : ""} ${(!hidden && showNav) && "open"}`} onClick={changeHidden}>
+        {!hidden ? <IoMdClose /> : <GiHamburgerMenu />}
+      </div>
     </div>
   );
 };

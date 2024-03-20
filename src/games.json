@@ -10,7 +10,7 @@
         "fun-fact": "Games played on three-in-a-row boards can be traced back to ancient Egypt, where such game boards have been found on roofing tiles dating from around 1300 BC. <br /> An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time) and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing.",
         "data-source": "Wikipedia",
         "source-link": "https://en.wikipedia.org/wiki/Tic-tac-toe#:~:text=least%20three%20points.-,History,around%20the%20first%20century%20BC.",
-        "instruction": ""
+        "instruction": "Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid. <br /> Players take turns placing their marks ('X' or 'O') in empty cells of the grid. The first player starts with 'X', and then players alternate turns. <br /> The game ends when one player achieves a line of three marks in a row, column, or diagonal, or when the grid is filled with no winner (a draw). <br /> Players aim to create their own lines while blocking their opponent's lines to prevent them from winning. The player who successfully forms a line first wins the game. <br /> After the game ends, players can choose to restart and play again."
     },
     {
         "id": "1",

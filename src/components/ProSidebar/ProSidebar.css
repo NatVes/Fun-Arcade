@@ -41,8 +41,9 @@
     font-size: 50px;
   }
 
+  
 /* Media query for smaller screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .sidenav {
     width: 200px; 
     height: 100vh; 
@@ -50,5 +51,28 @@
   .navIcon {
     font-size: 40px; 
   }
+
+  .hidden {
+    display: none;
+  }
+
+  .sm-burger {
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    z-index: 999;
+    scale: 1.2;
+    cursor: pointer;
+    transition: left 0.3s ease;
+  }
+
+  .sm-burger.active {
+    left: 95px;
+  }
+
+  .sm-burger.open {
+    left: 270px;
+  }
+
 }
 

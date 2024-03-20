@@ -6,7 +6,7 @@ import gamesData from "../../../../games.json";
 
 const Body = () => {
   return (
-    <section className="row justify-content-end justify-content-sm-center gap-4 my-5 mx-0">
+    <section className="row justify-content-center gap-4 my-5 mx-0">
       {gamesData.map((game, i) => (
         <GameContainer
           i={i}

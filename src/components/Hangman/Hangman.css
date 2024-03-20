@@ -76,7 +76,7 @@
     width: 40px;
 }
 
-.timer {
+.timer, .timer-red {
     color: greenyellow;
     background-color: black;
     display: flex;
@@ -84,6 +84,11 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 4%;
+}
+
+.timer-red {
+    color: rgb(233, 31, 31);
+
 }
 
 .restart-container {

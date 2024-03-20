@@ -117,8 +117,10 @@
 }
 
 .game-over {
+    border: 2px dashed white;
+    text-align: center;
     padding: 5%;
-    width: 50%;
+    width: 60%;
 }
 
 .statement {

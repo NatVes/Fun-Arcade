@@ -1,22 +1,21 @@
 .hangman-intro {
     display: flex;
     justify-content: center;
-    font-size: 1.8rem;
-    margin: 3%;
+    font-size: 1.5rem;
+    margin: 2%;
     color: black;
     text-shadow: 2px 2px 5px rgb(217, 142, 240);
 }
 
 .hangman-container {
     margin: auto;
-    margin-top: 2%;
-    margin-bottom: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     background-image: linear-gradient(90deg, #EADEDB 0%, #fdfdfd 50%, #EADEDB 80%);
     opacity: 0.9;
     border: 2px solid black;
-    width: 50%;
+    width: 55%;
     border-radius: 55px;
-
 }
 
 .game-body {
@@ -28,9 +27,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    margin: 2%;
+    width: 60%;
 }
+
 .wrong-guess-container {
     width: 40%;
     margin: 3%;
@@ -42,15 +41,9 @@
     font-weight: bold;
 }
 
-.frame {
+.frame, .figure {
     stroke: black;
-    stroke-width: 5px;
-    stroke-linecap: round;
-}
-
-.figure {
-    stroke: black;
-    stroke-width: 5px;
+    stroke-width: 4px;
     stroke-linecap: round;
 }
 
@@ -58,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 10%;
     font-weight: bold;
     margin-bottom: 3%;
     color: black;
@@ -81,9 +74,9 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 .timer-red {
@@ -94,7 +87,7 @@
 .restart-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .restart-button, .play-again-button {

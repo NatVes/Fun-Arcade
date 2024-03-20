@@ -1,6 +1,6 @@
 import React from "react";
 
-function GameOver() {
+function GameWon() {
     function reload(e) {
         e.preventDefault();
         window.location.reload(false);
@@ -8,12 +8,13 @@ function GameOver() {
     return (
         <div className="game-status-container">
             <div className='game-over'>
-                <h1>GAME OVER</h1>
-                <h2 className="statement">You Made Too Many Incorrect Guesses!</h2>
+                <h1>WINNER!</h1>
+                <h2 className="statement">You Guessed Correctly</h2>
                 <button type="button" onClick={reload} className="play-again-button">Play Again</button>
             </div>
         </div>
     )
 }
 
-export default GameOver;
+export default GameWon;
+

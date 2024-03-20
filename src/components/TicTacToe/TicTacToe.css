@@ -1,130 +1,81 @@
-.tic-tac-toe {
+/* TicTacToe.css */
+
+.board-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #000;
-  color: #fff;
+  height: 80vh; 
+  position: relative; 
 }
+
+
+/* Add styling for winning squares */
+.square.winning {
+  text-decoration: line-through;
+}
+
+.square.winning {
+  text-decoration: line-through;
+  animation-name: pulse;
+  animation-duration: 1s; 
+  animation-iteration-count: infinite;
+}
+
 
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  cursor: pointer;
-  position: relative;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px); 
 }
 
-.cell {
-  color: #fff;
-  font-size: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.cell:hover::after {
-  content: attr(data-player);
-  opacity: 0.6;
-}
-
-.strike {
-  position: absolute;
-  background-color: #ff00ff; /* Neon purple */
-  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff, 0 0 100px #ff00ff, 0 0 150px #ff00ff;
-}
-
-.strike-0 {
-  width: 100%;
-  height: 4px;
-  top: 15%;
-}
-
-.strike-1 {
-  width: 100%;
-  height: 4px;
-  top: 50%;
-}
-
-.strike-2 {
-  width: 100%;
-  height: 4px;
-  top: 85%;
-}
-
-.strike-3 {
-  height: 100%;
-  width: 4px;
-  left: 15%;
-}
-
-.strike-4 {
-  height: 100%;
-  width: 4px;
-  left: 50%;
-}
-
-.strike-5 {
-  height: 100%;
-  width: 4px;
-  left: 85%;
-}
-
-.strike-6 {
-  width: 90%;
-  height: 4px;
-  top: 5%;
-  left: 5%;
-  transform: skewY(45deg);
-}
-
-.strike-7 {
-  width: 90%;
-  height: 4px;
-  top: 5%;
-  left: 5%;
-  transform: skewY(-45deg);
-}
-
-.status {
+.square {
+  background: #fff;
+  border: 2px solid #000;
+  font-size: 48px; /* Increase font size */
+  font-weight: bold;
+  line-height: 150px; /* Adjust line height for vertical centering */
+  height: 150px; /* Increase square size */
+  margin: 0;
+  padding: 0;
   text-align: center;
-  margin-top: 20px;
+  width: 150px; /* Increase square size */
 }
 
-.scores {
-  margin-top: 20px;
-}
-
-.tile {
-  color: #fff;
-  font-size: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.game-over {
-  text-align: center;
-  border: #ff00ff 8px dotted; /* Neon purple border */
-  padding: 10px;
-  margin-top: 50px;
-  font-size: 1.5em;
-}
-
-.reset-button {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #00ff00; /* Neon green */
-  color: #000; /* Black text */
-  width: 100%;
-  font-size: 1.5em;
-  border: none;
+.square:focus {
   outline: none;
+}
+
+/* Style the game status */
+.status {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: absolute; 
+  top: 70px;
+  left: 48%;
+  transform: translateX(-50%); 
+  z-index: 1; 
+}
+.square.X {
+  color: #ff00ff; /* Neon purple */
+}
+
+.square.O {
+  color: #ff00ff; /* Neon purple */
+}
+.reset-button {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #14d214; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
 }
 
 .reset-button:hover {
-  background-color: #00ff00; /* Neon green */
-  color: #fff; /* White text */
+  background-color: #3f29cf;
 }

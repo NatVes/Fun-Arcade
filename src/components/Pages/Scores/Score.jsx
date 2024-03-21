@@ -15,14 +15,14 @@ export default function Score() {
       className="title text-center my-5">SCORES</motion.h1>
       <hr />
       <div className="row justify-content-center my-5">
-        <div className="col-md-4">
+        <div className="col-md-4 mb-3">
           <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1.5 }}
           >TIC-TAC-TOE</motion.h2>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 mb-3">
           <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -45,7 +45,7 @@ export default function Score() {
               </motion.ul>
         ))}
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 mb-3">
           <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

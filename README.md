@@ -3,25 +3,20 @@
 ## Table of Contents
 
 1. [Project Description](#project-description)
-2. [Team](#team)
+2. [Team and Project Goals](#team-and-project-goals)
 3. [Technologies & Libraries Used](#technologies--libraries-used)
-4. [App Idea: Fun Arcade](#app-idea-fun-arcade)
+4. [Games](#games)
 5. [Project Demo](#project-demo)
 6. [Project Deployment](#project-deployment)
+7. [Credits](#credits)
 
 ## Project Description
 
 The Fun Arcade is an exciting game platform that offers users the opportunity to play a variety of games, including Hangman, Tic Tac Toe, and the Memory Card Game, with more thrilling games in the pipeline. Embracing a neon-colored aesthetic, the Fun Arcade delivers an immersive and visually stimulating experience for players of all ages. Whether you're looking to challenge your strategic skills or test your memory prowess while you play with friends or solo the Fun Arcade has something for everyone. Get ready to dive into a world of fun and entertainment with the Fun Arcade!
 
-## Team
+## Team and Project Goals
 
-- Natalia Veselova
-- Ramisa Chowdhury
-- Michael Togunloju
-- Miah Mahamuda (Maha)
-- Diaconu, Ioan (Dodo)
-
-The projects aim was to showcase our collaborative skills and coding abilities by creating a scalable, user-focused React app. The project revolves around the concept of a fun arcade where users can enjoy three different games: Memory game, Hangman and Tic-tac-toe.
+Our primary objective with this project as a team was to showcase our collaborative abilities and technical expertise in React development. We aimed to create an interactive and scalable application that puts user experience at the forefront. Our concept centered around building a dynamic arcade platform where users can immerse themselves in three distinct and entertaining games: Memory game, Hangman, and Tic-tac-toe. Through thoughtful design and implementation, we strived to deliver a fun and engaging experience for players of all ages.
 
 ## Technologies & Libraries Used
 
@@ -62,5 +57,5 @@ Contributors:
 - [Ramisa Chowdhury](https://github.com/RamisaChowdhury)
 - [Michael Togunloju](https://github.com/novusm)
 - [Miah Mahamuda (Maha)](https://github.com/m-maha21)
-- [Diaconu, Ioan (Dodo)](https://github.com/DodoID)
+- [Diaconu Ioan (Dodo)](https://github.com/DodoID)
 
